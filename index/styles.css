@@ -1,0 +1,132 @@
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.top-section{
+    padding-top: 10px;
+    width: 69%;
+    margin-bottom: 50px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: "one one two" "one one three";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 190px 190px;
+    grid-gap: 10px;
+}
+ .grid-item-one{
+    grid-area: one;
+    grid-column: span 2; 
+ }
+
+ .grid-item-two{
+    grid-area: two;
+ }
+
+ .grid-item-three{
+    grid-area: three;
+ }
+
+ .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden; 
+ }
+
+ .flex-container-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    margin-top: 10px;
+    padding-left: 40px;
+    padding-right: 45px;
+ }
+
+ .image-label{
+    font-size: 18px;
+    font-weight: bold;
+    color: #454545;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:Poppins, Helvetica, sans-serif;
+ }
+
+.image-container{
+   height: 120px;
+ }
+
+ .btn{
+    background-color: #3268BE;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 85%;
+    margin-top: 10px;
+    margin-left: 10px;
+ }
+
+ .background{
+   background-color: #F9F9F9;
+ }
+
+ .bottom-section{
+   padding-top:27px;
+   padding-bottom: 30px;
+   width: 80%;
+   margin: 0 auto;
+   
+}
+
+.section-label{
+   font-weight: bold;
+   font-family:-apple-system, BlinkMacSystemFont, 'Open Sans',sans-serif,'Inv Maison Neue';
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.flex-container-bottom{
+   display: flex;
+   justify-content: space-between;
+   gap: 13px;
+   margin-top: 10px;
+   padding-left: 40px;
+   padding-right: 40px;
+}
+
+.icon-img{
+   border-radius: 50%;
+   height: 40px;
+   width: 40px;
+   margin-top: 85px;
+}
+
+.container{
+   background-color: white;
+   width: 20%;
+}
+
+.placeholder-img{
+   height: 200px;
+}
+
+.text{
+   font-size:small;
+   font-family: Poppins,Helvetica, sans-serif;
+   text-align: center;
+}
+
+.product-price{
+   color: #4380C7;
+   font-weight: bold;
+}
+
+.product-description{
+   width: 97%;
+   color: #272727;
+}
+
