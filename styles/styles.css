@@ -77,9 +77,8 @@ main{
  .bottom-section{
    padding-top:27px;
    padding-bottom: 30px;
-   width: 80%;
+   width: 1000px;
    margin: 0 auto;
-   
 }
 
 .section-label{
@@ -107,7 +106,11 @@ main{
 
 .container{
    background-color: white;
-   width: 20%;
+   /* width: 20%; */
+   overflow: hidden;
+   height: 300px;
+   min-height: max-content;
+
 }
 
 .placeholder-img{
@@ -130,3 +133,33 @@ main{
    color: #272727;
 }
 
+.glide__slide{
+   overflow: hidden;
+}
+
+
+.arrows{
+   position: absolute;
+   top: 40%;
+   width: 1000px;
+   display: flex;
+   justify-content: space-between;
+   left: 0;
+}
+
+.left-arrow{
+   transform: translateX(-40px)
+}
+
+.right-arrow{
+   transform: translateX(40px)
+}
+
+.bullets{
+   
+   position: relative;
+   margin-top: 50px;
+   background-color: grey;
+   padding: 5px;
+   border-radius: 10px;
+}
