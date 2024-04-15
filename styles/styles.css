@@ -18,9 +18,9 @@ main{
     grid-template-rows: 190px 190px;
     grid-gap: 10px;
 }
+
  .grid-item-one{
     grid-area: one;
-    grid-column: span 2; 
  }
 
  .grid-item-two{
@@ -74,12 +74,6 @@ main{
    background-color: #F9F9F9;
  }
 
- .bottom-section{
-   padding-top:27px;
-   padding-bottom: 30px;
-   width: 1000px;
-   margin: 0 auto;
-}
 
 .section-label{
    font-weight: bold;
@@ -104,19 +98,15 @@ main{
    margin-top: 85px;
 }
 
-.container{
-   background-color: white;
-   /* width: 20%; */
-   overflow: hidden;
-   height: 300px;
-   min-height: max-content;
 
-}
 
 .placeholder-img{
    height: 200px;
 }
-
+h3{
+   font-family: Poppins,Helvetica, sans-serif;
+   text-align: center;
+}
 .text{
    font-size:small;
    font-family: Poppins,Helvetica, sans-serif;
@@ -140,8 +130,8 @@ main{
 
 .arrows{
    position: absolute;
-   top: 40%;
-   width: 1000px;
+   top: 38%;
+   width: 100%;
    display: flex;
    justify-content: space-between;
    left: 0;
@@ -155,11 +145,118 @@ main{
    transform: translateX(40px)
 }
 
+.container{
+   background-color: white;
+   overflow: hidden;
+   height: 300px;
+   min-height: max-content;
+}
+
 .bullets{
-   
    position: relative;
    margin-top: 50px;
    background-color: grey;
    padding: 5px;
    border-radius: 10px;
 }
+
+
+.bottom-section{
+   padding-top:27px;
+   padding-bottom: 30px;
+   width: 1000px;
+   margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+   .bottom-section {
+      width: 90%; 
+      max-width: 100%; 
+   }
+
+   .container {
+      height: auto; 
+      min-height: 200px; 
+   }
+
+   .left-arrow,
+   .right-arrow {
+      transform: none; 
+   }
+}
+
+@media only screen and (max-width: 1024px) {
+   .bottom-section {
+      width: 90%; 
+      max-width: 100%; 
+   }
+
+   .container {
+      height: auto; 
+      min-height: 200px;
+   }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+      .grid-container {
+         display: block;
+      }
+
+      .top-section{
+         width: 90%;
+     }
+     .flex-container-top{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 30px;
+      margin-top: 10px;
+      padding-left: 2px;
+      padding-right: 2px;
+   }
+
+   .container-item{
+      display: grid;
+      grid-template-areas: "one two" "one three";
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+   }
+   .image-label{
+      grid-area: two;
+      font-size: 13px;
+      padding-top: 5px;
+      text-align: left;
+   }
+   .image-container{
+      grid-area: one;
+   }
+   .btn{
+      grid-area: three;
+      background-color: white;
+      color:#3268BE ;
+      padding: 0px;
+      margin-top: 0px;
+      margin-left: 0px;
+      text-align: left;
+      transform: translateY(-40px);
+   }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+   .top-section {
+       width: 90%; 
+   }
+
+   .flex-container-top {
+       gap: 25px; 
+      
+   }
+
+}
+
+
+
