@@ -5,6 +5,10 @@ main{
     margin-bottom: 100px;
 }
 
+h3{
+   text-align: center;
+}
+
 .top-section{
     padding-top: 10px;
     width: 69%;
@@ -74,6 +78,12 @@ main{
    background-color: #F9F9F9;
  }
 
+ .bottom-section{
+   padding-top:27px;
+   padding-bottom: 30px;
+   width: 1000px;
+   margin: 0 auto;
+}
 
 .section-label{
    font-weight: bold;
@@ -82,31 +92,21 @@ main{
    text-align: center;
 }
 
-.flex-container-bottom{
-   display: flex;
-   justify-content: space-between;
-   gap: 13px;
-   margin-top: 10px;
-   padding-left: 40px;
-   padding-right: 40px;
+.glide__slide{
+   overflow: hidden;
 }
 
-.icon-img{
-   border-radius: 50%;
-   height: 40px;
-   width: 40px;
-   margin-top: 85px;
+.container{
+   background-color: white;
+   overflow: hidden;
+   height: 300px;
+   min-height: max-content;
 }
-
-
 
 .placeholder-img{
    height: 200px;
 }
-h3{
-   font-family: Poppins,Helvetica, sans-serif;
-   text-align: center;
-}
+
 .text{
    font-size:small;
    font-family: Poppins,Helvetica, sans-serif;
@@ -122,11 +122,6 @@ h3{
    width: 97%;
    color: #272727;
 }
-
-.glide__slide{
-   overflow: hidden;
-}
-
 
 .arrows{
    position: absolute;
@@ -145,13 +140,6 @@ h3{
    transform: translateX(40px)
 }
 
-.container{
-   background-color: white;
-   overflow: hidden;
-   height: 300px;
-   min-height: max-content;
-}
-
 .bullets{
    position: relative;
    margin-top: 50px;
@@ -160,15 +148,68 @@ h3{
    border-radius: 10px;
 }
 
+/* Top section - responsive */
+@media only screen and (max-width: 768px) {
+      .grid-container {
+         display: block;
+      }
 
-.bottom-section{
-   padding-top:27px;
-   padding-bottom: 30px;
-   width: 1000px;
-   margin: 0 auto;
+      .top-section{
+         width: 90%;
+     }
+
+      .flex-container-top{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 30px;
+      margin-top: 10px;
+      padding-left: 2px;
+      padding-right: 2px;
+      }
+
+      .container-item{
+      display: grid;
+      grid-template-areas: "one two" "one three";
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+      }
+
+      .image-label{
+      grid-area: two;
+      font-size: 13px;
+      padding-top: 5px;
+      text-align: left;
+      }
+
+      .image-container{
+      grid-area: one;
+      }
+
+      .btn{
+      grid-area: three;
+      background-color: white;
+      color:#3268BE ;
+      padding: 0px;
+      margin-top: 0px;
+      margin-left: 0px;
+      text-align: left;
+      transform: translateY(-40px);
+      }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
+   .top-section {
+       width: 90%; 
+   }
+
+   .flex-container-top {
+       gap: 25px; 
+   }
+}
+
+/* Carousel - responsive */
+@media only screen and (max-width: 768px) { 
    .bottom-section {
       width: 90%; 
       max-width: 100%; 
@@ -195,68 +236,4 @@ h3{
       height: auto; 
       min-height: 200px;
    }
-
-
 }
-
-@media only screen and (max-width: 768px) {
-      .grid-container {
-         display: block;
-      }
-
-      .top-section{
-         width: 90%;
-     }
-     .flex-container-top{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 30px;
-      margin-top: 10px;
-      padding-left: 2px;
-      padding-right: 2px;
-   }
-
-   .container-item{
-      display: grid;
-      grid-template-areas: "one two" "one three";
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 15px;
-   }
-   .image-label{
-      grid-area: two;
-      font-size: 13px;
-      padding-top: 5px;
-      text-align: left;
-   }
-   .image-container{
-      grid-area: one;
-   }
-   .btn{
-      grid-area: three;
-      background-color: white;
-      color:#3268BE ;
-      padding: 0px;
-      margin-top: 0px;
-      margin-left: 0px;
-      text-align: left;
-      transform: translateY(-40px);
-   }
-
-}
-
-@media only screen and (max-width: 1024px) {
-
-   .top-section {
-       width: 90%; 
-   }
-
-   .flex-container-top {
-       gap: 25px; 
-      
-   }
-
-}
-
-
-
